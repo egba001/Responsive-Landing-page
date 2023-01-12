@@ -1,2 +1,2 @@
-# camping_website
-A simple website demonstrating the use of css grid
+# Camping ebsite
+A simple website exploring the use of css grid
