@@ -2,4 +2,40 @@ $primary: #98a718;
 $black: #000000;
 $gray: #aaaaaa;
 $white: #ffffff;
+$pageGridColumns: 72px auto 72px;
+$pageGridRows: 72px auto auto;
 
+/* Base: font */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Base: space */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base:  list */
+ul {
+    list-style: none;
+}
+
+/* Base: link */ 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Base image */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* Page Grid */
+.pageGrid {
+    grid-template-columns: $pageGridColumns;
+    grid-template-rows: $pageGridRows;
+}

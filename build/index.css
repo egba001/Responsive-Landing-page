@@ -1,3 +1,36 @@
+/* Base: font */
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
 
+/* Base: space */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base:  list */
+ul {
+  list-style: none;
+}
+
+/* Base: link */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Base image */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* Page Grid */
+.pageGrid {
+  grid-template-columns: 72px auto 72px;
+  grid-template-rows: 72px auto auto;
+}
 
 /*# sourceMappingURL=index.css.map */
