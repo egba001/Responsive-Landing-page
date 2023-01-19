@@ -36,6 +36,32 @@ img {
 
 /* Page Grid */
 .pageGrid {
+    display: grid;
     grid-template-columns: $pageGridColumns;
     grid-template-rows: $pageGridRows;
 }
+
+/* Navigation button */
+.nav-button {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* SNS menu */
+.sns {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* Vertical text */
+.decor {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* Footer */
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
