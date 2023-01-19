@@ -55,6 +55,11 @@ img {
   grid-column: 2;
 }
 
+@media (min-width: 768px) {
+  .partsGrid {
+    grid-template-columns: 1fr 1074px 1fr;
+  }
+}
 /* Navigation button */
 .nav-button {
   grid-column: 3;
@@ -147,6 +152,35 @@ img {
   grid-row: 3;
   background-color: #000000;
   color: #ffffff;
+  padding: 81px 0 86px;
+}
+.footer > * {
+  grid-row: 1;
+}
+.footer .site {
+  margin-bottom: 33px;
+  font-size: 37px;
+  font-weight: bold;
+}
+.footer .address {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.footer .chat {
+  justify-self: end;
+  margin-top: -100px;
+  color: #98a718;
+  font-size: 16px;
+  text-align: center;
+}
+.footer .chat img {
+  padding-bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  .footer .chat {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
