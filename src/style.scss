@@ -34,6 +34,18 @@ img {
     vertical-align: bottom;
 }
 
+/* Base screen reader only */
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 /* Page Grid */
 .pageGrid {
     display: grid;
@@ -45,6 +57,31 @@ img {
 .nav-button {
     grid-column: 3;
     grid-row: 1;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: $primary;
+    cursor: pointer;
+    /* Navigation button's white line */
+    display: grid;
+    place-content: center;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 32px;
+        height: 4px;
+        background-color: $white;
+    }
+
+    &::before {
+        transform: translateY(-5px);
+    }
+
+    &::after {
+        transform: translateY(5px);
+    }
 }
 
 /* SNS menu */

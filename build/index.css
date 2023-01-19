@@ -27,10 +27,69 @@ img {
   vertical-align: bottom;
 }
 
+/* Base screen reader only */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /* Page Grid */
 .pageGrid {
+  display: grid;
   grid-template-columns: 72px auto 72px;
   grid-template-rows: 72px auto auto;
+}
+
+/* Navigation button */
+.nav-button {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: #98a718;
+  cursor: pointer;
+  /* Navigation button's white line */
+  display: grid;
+  place-content: center;
+}
+.nav-button::before, .nav-button::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 32px;
+  height: 4px;
+  background-color: #ffffff;
+}
+.nav-button::before {
+  transform: translateY(-5px);
+}
+.nav-button::after {
+  transform: translateY(5px);
+}
+
+/* SNS menu */
+.sns {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Vertical text */
+.decor {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Footer */
+.footer {
+  grid-column: 1/-1;
+  grid-row: 3;
 }
 
 /*# sourceMappingURL=index.css.map */
