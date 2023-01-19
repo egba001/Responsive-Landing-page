@@ -78,18 +78,45 @@ img {
 .sns {
   grid-column: 3;
   grid-row: 2;
+  justify-self: end;
+  align-self: start;
+  margin-top: 187px;
+  margin-right: 10px;
+  display: grid;
+  gap: 30px;
 }
 
+@media (min-width: 768px) {
+  .sns {
+    justify-self: center;
+    margin-right: 0;
+  }
+}
 /* Vertical text */
 .decor {
   grid-column: 1;
   grid-row: 2;
+  justify-self: start;
+  align-self: start;
+  margin-top: 257px;
+  margin-left: 10px;
+  color: #aaaaaa;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
+@media (min-width: 768px) {
+  .decor {
+    justify-self: center;
+    margin-left: 0;
+  }
+}
 /* Footer */
 .footer {
   grid-column: 1/-1;
   grid-row: 3;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
