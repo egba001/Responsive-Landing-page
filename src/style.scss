@@ -53,6 +53,16 @@ img {
     grid-template-rows: $pageGridRows;
 }
 
+/* Parts Grid */
+.partsGrid {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+
+    & > *, &::before, &::after {
+        grid-column: 2;
+    }
+}
+
 /* Navigation button */
 .nav-button {
     grid-column: 3;
@@ -120,6 +130,30 @@ img {
     .decor {
         justify-self: center;
         margin-left: 0;
+    }
+}
+
+/* Decorative line */
+@media (min-width: 768px) {
+    .pageGrid::before, .pageGrid::after {
+        content: '';
+        display: block;
+        background-color: $primary;
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        margin-top: 660px;
+    }
+
+    .pageGrid::before {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    .pageGrid::after {
+        width: 1px;
+        min-height: 200px;
     }
 }
 
