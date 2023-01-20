@@ -243,5 +243,30 @@ main {
     line-height: 1.7;
   }
 }
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: 158fr 167fr;
+  grid-template-rows: 173px 136px 136px;
+  grid-template-areas: "A A" "B C" "B D";
+  gap: 10px;
+}
+.gallery .photoA {
+  grid-area: A;
+}
+.gallery .photoB {
+  grid-area: B;
+}
+.gallery .photoC {
+  grid-area: C;
+}
+.gallery .photoD {
+  grid-area: D;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=index.css.map */

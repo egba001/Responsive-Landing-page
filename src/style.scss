@@ -286,3 +286,24 @@ main {
     }
 }
 
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 158fr 167fr;
+    grid-template-rows: 173px 136px 136px;
+    grid-template-areas: "A A" "B C" "B D";
+    gap: 10px;
+
+    .photoA {grid-area: A;}
+    .photoB {grid-area: B;}
+    .photoC {grid-area: C;}
+    .photoD {grid-area: D;}
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
