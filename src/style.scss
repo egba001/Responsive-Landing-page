@@ -293,6 +293,7 @@ main {
     grid-template-rows: 173px 136px 136px;
     grid-template-areas: "A A" "B C" "B D";
     gap: 10px;
+    margin: 14px 0;
 
     .photoA {grid-area: A;}
     .photoB {grid-area: B;}
@@ -306,4 +307,24 @@ main {
     }
 }
 
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: 334fr 248fr 248fr;
+        grid-template-rows: 278px 205px;
+        grid-template-areas: "B A A" "B C D";
+        gap: 15px;
+        margin: 16px 0;
+    }
+}
 
+/* Hero */
+.hero > * {
+    grid-column: 1 / -1;
+
+    h1 {
+        font: {
+            size: 91px;
+            weight: bold;
+        }
+    }
+}
