@@ -359,6 +359,31 @@ main {
     justify-self: center;
 }
 
+/* Message */
+.msg {
+    padding: 64px 0;
+    row-gap: 56px
+
+    img {
+        object-position: left center;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.msgBlack {
+    color: $white;
+    background-color: $black;
+
+    img {
+        object-position: left center;
+    }
+}
+
 @media (min-width: 768px) {
     .hero {
         h1 {
