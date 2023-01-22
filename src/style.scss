@@ -428,7 +428,40 @@ main {
         font-size: 30px;
         font-weight: bold;
     }
+
+    .text-subtiitle {
+        margin-bottom: 40px;
+        color: $gray;
+        font-size: 20px;
+    }
+
+    .text-body {
+        margin-bottom: 70px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .text-link {
+        color: $primary;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    figure {
+        grid-row: 1;
+    }
+    
+    &::before {
+        grid-row: 1;
+        z-index: 2;
+        content: '';
+        display: block;
+        width: 26px;
+        height: 27px;
+        background-color: $primary;
+    }
 }
+
 
 .msgBlack {
     color: $white;
@@ -439,7 +472,49 @@ main {
     }
 }
 
+.msgWhite::before {
+    justify-self: end;
+}
 
+.msgWhite::after {
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: -90px;
+    z-index: -1;
+    height: 130px;
+    align-self: end;
+    margin-bottom: -25px;
+    content: '';
+    display: block;
+    background-color: $primary;
+    opacity: 60%;
+}
 
+@media (min-width: 768px) {
+    .msg {
+        figure {
+            grid-row: 1;
+            width: 44%;
+        }
+
+        .text {
+            grid-row: 1;
+            width: 44%;
+            margin: 92px 0 46px;
+        }
+
+        h2 {
+            font-size: 38px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .msgBlack figure, .msgWhite .text {
+        justify-self: end;
+    }
+}
 
 

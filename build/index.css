@@ -367,6 +367,33 @@ main {
   font-size: 30px;
   font-weight: bold;
 }
+.msg .text-subtiitle {
+  margin-bottom: 40px;
+  color: #aaaaaa;
+  font-size: 20px;
+}
+.msg .text-body {
+  margin-bottom: 70px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.msg .text-link {
+  color: #98a718;
+  font-size: 18px;
+  font-weight: bold;
+}
+.msg figure {
+  grid-row: 1;
+}
+.msg::before {
+  grid-row: 1;
+  z-index: 2;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 27px;
+  background-color: #98a718;
+}
 
 .msgBlack {
   color: #ffffff;
@@ -374,6 +401,45 @@ main {
 }
 .msgBlack img {
   object-position: left center;
+}
+
+.msgWhite::before {
+  justify-self: end;
+}
+
+.msgWhite::after {
+  grid-column: 1;
+  grid-row: 1;
+  margin-right: -90px;
+  z-index: -1;
+  height: 130px;
+  align-self: end;
+  margin-bottom: -25px;
+  content: "";
+  display: block;
+  background-color: #98a718;
+  opacity: 60%;
+}
+
+@media (min-width: 768px) {
+  .msg figure {
+    grid-row: 1;
+    width: 44%;
+  }
+  .msg .text {
+    grid-row: 1;
+    width: 44%;
+    margin: 92px 0 46px;
+  }
+  .msg h2 {
+    font-size: 38px;
+  }
+  .msg img {
+    height: 100%;
+  }
+  .msgBlack figure, .msgWhite .text {
+    justify-self: end;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
