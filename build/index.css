@@ -177,12 +177,14 @@ img {
 .footer address {
   font-size: 14px;
   line-height: 1.3;
+  display: block;
 }
 .footer .chat {
   justify-self: end;
   margin-top: -100px;
   color: #98a718;
   font-size: 16px;
+  font-weight: bold;
   text-align: center;
 }
 .footer .chat img {
@@ -201,26 +203,26 @@ main {
 }
 
 /* Header image */
-.heading .site {
+.headimg .site {
   margin-top: 33px;
   color: #98a718;
   font-size: 37px;
   font-weight: bold;
 }
-.heading figure {
+.headimg figure {
   grid-column: 1/-1;
 }
-.heading figure img {
+.headimg figure img {
   width: 100%;
   height: 498px;
   object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .heading figure {
+  .headimg figure {
     grid-column: 2;
   }
-  .heading img {
+  .headimg img {
     object-position: center bottom;
   }
 }
@@ -355,8 +357,10 @@ main {
 /* Message */
 .msg {
   padding: 64px 0;
-  row-gap: 56px img;
-  row-gap-object-position: left center;
+  row-gap: 56px;
+}
+.msg img {
+  object-position: left center;
 }
 .msg h2 {
   margin-bottom: 5px;
