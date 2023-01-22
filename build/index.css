@@ -286,6 +286,11 @@ main {
 .hero {
   background-color: #ffffff;
 }
+.hero > * {
+  grid-column: 1/-1;
+  grid-row: 1;
+  justify-self: center;
+}
 .hero h1, .hero p {
   color: #ffffff;
   mix-blend-mode: difference;
@@ -306,32 +311,6 @@ main {
   width: 302px;
   height: 506px;
   object-fit: cover;
-}
-
-.hero > * {
-  grid-column: 1/-1;
-  grid-row: 1;
-  justify-self: center;
-}
-
-/* Message */
-.msg {
-  padding: 64px 0;
-  row-gap: 56px img;
-  row-gap-object-position: left center;
-}
-.msg h2 {
-  margin-bottom: 5px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.msgBlack {
-  color: #ffffff;
-  background-color: #000000;
-}
-.msgBlack img {
-  object-position: left center;
 }
 
 @media (min-width: 768px) {
@@ -366,6 +345,25 @@ main {
     width: 395px;
     height: 572.5px;
   }
+}
+/* Message */
+.msg {
+  padding: 64px 0;
+  row-gap: 56px img;
+  row-gap-object-position: left center;
+}
+.msg h2 {
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.msgBlack {
+  color: #ffffff;
+  background-color: #000000;
+}
+.msgBlack img {
+  object-position: left center;
 }
 
 /*# sourceMappingURL=index.css.map */

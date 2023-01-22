@@ -324,6 +324,13 @@ main {
 .hero {
     background-color: $white;
 
+
+    &> * {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        justify-self: center;
+    }
+
     h1, p {
         color: $white;
         mix-blend-mode: difference;
@@ -350,37 +357,6 @@ main {
         width: 302px;
         height: 506px;
         object-fit: cover;
-    }
-}
-
-.hero > * {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    justify-self: center;
-}
-
-/* Message */
-.msg {
-    padding: 64px 0;
-    row-gap: 56px
-
-    img {
-        object-position: left center;
-    }
-
-    h2 {
-        margin-bottom: 5px;
-        font-size: 30px;
-        font-weight: bold;
-    }
-}
-
-.msgBlack {
-    color: $white;
-    background-color: $black;
-
-    img {
-        object-position: left center;
     }
 }
 
@@ -429,3 +405,33 @@ main {
         }
     }
 }
+
+/* Message */
+.msg {
+    padding: 64px 0;
+    row-gap: 56px
+
+    img {
+        object-position: left center;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.msgBlack {
+    color: $white;
+    background-color: $black;
+
+    img {
+        object-position: left center;
+    }
+}
+
+
+
+
+
