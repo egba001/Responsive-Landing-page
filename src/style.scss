@@ -57,7 +57,7 @@ img {
 .partsGrid {
     display: grid;
     grid-template-columns: 20px auto 20px;
-    grid-template-rows: 1fr 1fr;
+    
 
     & > * {
         grid-column: 2;
@@ -83,6 +83,7 @@ img {
         }
     }
 }
+
 
 /* Navigation button */
 .nav-button {
