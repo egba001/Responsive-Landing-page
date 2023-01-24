@@ -25,6 +25,11 @@ A responsive website using semantic HTML, Javascript and CSS grid layout to posi
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+## Live project
+
+[Live Demo](https://campsite121.netlify.app)
+
 ## Screenshots
 
 ![App Screeshot](./img/screenshot.png)
